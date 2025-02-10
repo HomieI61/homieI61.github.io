@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body class="quiz">
+
+    <header>
+        <div class="container">
+
+            <div class="d-flex">
+
+                <a href="Index.html" class="logo">FromSoftware</a>
+
+                <div id="nav">
+
+                    <nav>
+                        <ul class="d-flex">
+                            <li><a href="Index6.html" class="support">Support</a></li>
+                            <li><a href="Sale.html" class="shop">Shop </a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+    <div class="question-wrapper">
+
+
+        <div class="questions active">
+
+            <div class="question_name1">Почему Боги боялись Велку - Богиню Греха?</div>
+
+            <div class="question_block">
+
+                <div class="question_picture">
+                    <img src="png/test1.png" alt="">
+
+                    <div class="answers">
+
+                        <div class="answers_wrapper">
+
+                            <div class="answer">
+                                <input id="answer1" type="radio" name="ANSWER1" value="1" class="hide">
+                                <label for="answer1"><span>Потому что тоже были не безгрешны</span></label>
+                            </div>
+
+                            <div class="answer">
+                                <input id="answer2" type="radio" name="ANSWER1" value="2" class="hide">
+                                <label for="answer2">Она знала, что огонь угаснет</label>
+                            </div>
+
+                            <div class="answer">
+                                <input id="answer3" type="radio" name="ANSWER1" value="3" class="hide">
+                                <label for="answer3">У неё были сильные последователи</label>
+                            </div>
+
+                            <div class="answer">
+                                <input id="answer4" type="radio" name="ANSWER1" value="4" class="hide">
+                                <label for="answer4">У неё был Уголь Тьмы</label>
+                            </div>
+
+                        </div>
+
+                        <button onclick="checkAnswer()" id="check">Проверить ответ</button>
+                        <button id="next" class="nextBtn">Cледующий вопрос</button>
+                        <p id="result"></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="questions2">
+
+            <div class="question_name2">Кого из своих детей, Гвин послал уберегать Город За Стеной?</div>
+
+            <div class="question_block">
+
+                <div class="question_picture">
+                    <img src="png/ringedCity.png" alt="">
+
+                    <div class="answers">
+
+                        <div class="answers_wrapper">
+
+                            <div class="answer">
+                                <input id="answer11" type="radio" name="ANSWER2" value="1" class="hide">
+                                <label for="answer11">Фину</label>
+                            </div>
+
+                            <div class="answer">
+                                <input id="answer22" type="radio" name="ANSWER2" value="2" class="hide">
+                                <label for="answer22">Филианору</label>
+                            </div>
+
+                            <div class="answer">
+                                <input id="answer33" type="radio" name="ANSWER2" value="3" class="hide">
+                                <label for="answer33">Фланна</label>
+                            </div>
+
+                            <div class="answer">
+                                <input id="answer44" type="radio" name="ANSWER2" value="4" class="hide">
+                                <label for="answer44">Йоршку</label>
+                            </div>
+
+                        </div>
+
+                        <button onclick="checkAnswer2()">Проверить ответ</button>
+                        <button id="next2">Cледующий вопрос</button>
+                        <p id="result2"></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="questions3">
+
+            <div class="question_name3">По кому из четырёх рыцарей Гвина скорбит Великий Волк Сиф?</div>
+
+            <div class="question_block">
+
+                <div class="question_picture">
+                    <img src="png/sif.png" alt="">
+
+                    <div class="answers">
+
+                        <div class="answers_wrapper">
+
+                            <div class="answer">
+                                <input id="answer15" type="radio" name="ANSWER3" value="1" class="hide">
+                                <label for="answer15">Орнштейн Драконоборец</label>
+                            </div>
+
+                            <div class="answer">
+                                <input id="answer25" type="radio" name="ANSWER3" value="2" class="hide">
+                                <label for="answer25">Сиаран Клинок Повелителя</label>
+                            </div>
+
+                            <div class="answer">
+                                <input id="answer35" type="radio" name="ANSWER3" value="3" class="hide">
+                                <label for="answer35">Арториас Путник Бездны</label>
+                            </div>
+
+                            <div class="answer">
+                                <input id="answer45" type="radio" name="ANSWER3" value="4" class="hide">
+                                <label for="answer45">Гох Соколиный Глаз</label>
+                            </div>
+
+                        </div>
+
+                        <button onclick="checkAnswer3()">Проверить ответ</button>
+                        <button id="next3">Cледующий вопрос</button>
+                        <p id="result3"></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="questions4">
+
+            <div class="question_name4">Как черные рыцари, получили доспехи такого цвета?</div>
+
+            <div class="question_block">
+
+                <div class="question_picture">
+                    <img src="png/dark-knight.png" alt="">
+
+                    <div class="answers">
+
+                        <div class="answers_wrapper">
+
+                            <div class="answer">
+                                <input id="answer16" type="radio" name="ANSWER4" value="1" class="hide">
+                                <label for="answer16">Их проклял Нито-Повелитель Могил, за то, что рыцари попытались его
+                                    убить</label>
+                            </div>
+
+                            <div class="answer">
+                                <input id="answer26" type="radio" name="ANSWER4" value="2" class="hide">
+                                <label for="answer26">Они опалили доспехи в горниле первого пламени</label>
+                            </div>
+
+                            <div class="answer">
+                                <input id="answer36" type="radio" name="ANSWER4" value="3" class="hide">
+                                <label for="answer36">Получили их за особые заслуги</label>
+                            </div>
+
+                            <div class="answer">
+                                <input id="answer46" type="radio" name="ANSWER4" value="4" class="hide">
+                                <label for="answer46">Опалили свою броню в сражении с древними драконами</label>
+                            </div>
+
+                        </div>
+
+                        <button onclick="checkAnswer4()">Проверить ответ</button>
+                        <button id="next4">Cледующий вопрос</button>
+                        <p id="result4"></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="questions5">
+
+            <div class="question_name5">Иритилл Холодной долины закрыт для посторонних и надежно охраняется. Что нужно
+                иметь при себе, чтобы попасть туда?</div>
+
+            <div class="question_block">
+
+                <div class="question_picture">
+                    <img src="png/irithyll.png" alt="">
+
+                    <div class="answers">
+
+                        <div class="answers_wrapper">
+
+                            <div class="answer">
+                                <input id="answer17" type="radio" name="ANSWER5" value="1" class="hide">
+                                <label for="answer17">Два кольца: "Левый глаз понтифика" и "Правый глаз
+                                    понтифика"</label>
+                            </div>
+
+                            <div class="answer">
+                                <input id="answer27" type="radio" name="ANSWER5" value="2" class="hide">
+                                <label for="answer27">Маленькая кукла</label>
+                            </div>
+
+                            <div class="answer">
+                                <input id="answer37" type="radio" name="ANSWER5" value="3" class="hide">
+                                <label for="answer37">Камень "Весенняя роса"</label>
+                            </div>
+
+                        </div>
+
+                        <button onclick="checkAnswer5()">Проверить ответ</button>
+                        <button id="next5">Cледующий вопрос</button>
+                        <p id="result5"></p>
+                        <p id="scores"></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+
+</body>
+
+</html>

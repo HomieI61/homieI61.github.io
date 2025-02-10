@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="pageSale">
+
+    <header class="salesHeader">
+        <div class="container">
+
+            <div class="d-flex">
+
+                <a href="Index.html" class="logo">FromSoftware</a>
+                <a href="#nav" class="menu-btn">&#9776;</a>
+
+                <div id="nav">
+                    <a href="#" class="menu-btn">&times;</a>
+                    <nav>
+                        <ul class="d-flex">
+                            <li><a href="Index6.html" class="support">Support</a></li>
+                            <li><a href="quiz.html" class="quiz">Quiz</a></li>
+                            <li>
+                                <p id="openModal" class="button" class="header">Account</p>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="overlay" class="overlay"></div>
+        <div id="modal" class="modal">
+
+            <form action="" id="login_form active" class="accountForm">
+
+                <div class="form_row single_row">
+                    <input type="text" name="login" id="login" pattern="\D{3,20}" required placeholder="Your login">
+                </div>
+
+                <div class="form_row single_row">
+
+                    <input type="password" name="pass" id="pass" pattern="\d{5,20}" required
+                        placeholder="Your password:">
+                </div>
+                <!-- required - обязательно заполнить поля -->
+                <div class="chek_row">
+
+                    <input type="checkbox" name="remember" id="remember">
+                    <label for="remember">Remember me
+                    </label>
+                </div>
+
+                <div class="form_row">
+                    <button type="submit">Sign In</button>
+                </div>
+
+            </form>
+
+    </main>
+
+    <section class="sale-timer">
+        <h2>Товары со скидкой!</h2>
+        <div class="games">
+
+            <div class="game-sale dark">
+                <h3>Dark Souls</h3>
+                <img src="png/saleDS1.png" alt="" class="imgSale">
+                <p class="price"><s>2000 рублей</s><br>1499 рублей</p>
+                <p>До конца акции осталось!:</p>
+                <div class="timer" id="darkSoulsTimer">
+                    <span id="days">00 </span> д
+                    <span id="hours">00</span> ч
+                    <span id="minutes">00</span> м
+                    <span id="seconds">00</span> с
+                </div>
+            </div>
+            <div class="game-sale elden">
+                <h3>Elden Ring</h3>
+                <img src="png/saleElden.png" alt="" class="imgSale">
+                <p class="price"><s>3200 рублей</s><br>2499 рублей</p>
+                <p>До конца акции осталось!:</p>
+                <div class="timer" id="eldenRingTimer">
+                    <span id="days2">00</span> д
+                    <span id="hours2">00</span> ч
+                    <span id="minutes2">00</span> м
+                    <span id="seconds2">00</span> с
+                </div>
+            </div>
+        </div>
+
+        <div class="games">
+            <div class="game-sale bloodborne">
+                <h3>Bloodborne</h3>
+                <img src="png/saleBB.png" alt="" class="imgSale">
+                <p class="price"><s>4999 рублей</s><br> 3500 рублей</p>
+                <p>До конца акции осталось!:</p>
+                <div class="timer" id="eldenRingTimer">
+                    <span id="days3">00</span> д
+                    <span id="hours3">00</span> ч
+                    <span id="minutes3">00</span> м
+                    <span id="seconds3">00</span> с
+                </div>
+            </div>
+
+            <div class="game-sale sekiro">
+                <h3>Sekiro: Shadows Die Twice</h3>
+                <img src="png/saleSekiro.png" alt="" class="imgSale">
+                <p class="price"><s>3600 рублей</s> <br>2600 рублей</p>
+                <p>До конца акции осталось!:</p>
+                <div class="timer" id="eldenRingTimer">
+                    <span id="days4">00</span> д
+                    <span id="hours4">00</span> ч
+                    <span id="minutes4">00</span> м
+                    <span id="seconds4">00</span> с
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+
+        <div class="container">
+
+            <div class="d-flex">
+
+                <div class="social-links">
+
+                    <a href="https://www.darksouls.jp/" target="_blank">Dark Souls Official Site</a>
+
+                    <a href="">Telegram</a>
+
+                    <a href="">Все права защищены</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="sale.js"></script>
+    <script src="form.js"></script>
+</body>
+
+</html>

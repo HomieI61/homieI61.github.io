@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>FromSoftware</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+
+<body class="page5">
+
+    <header>
+        <div class="container">
+
+            <div class="d-flex">
+
+                <a href="Index.html" class="logo">FromSoftware</a>
+                <a href="#nav" class="menu-btn">&#9776;</a>
+
+                <div id="nav">
+                    <a href="#" class="menu-btn">&times;</a>
+                    <nav>
+                        <ul class="d-flex">
+                            <li><a href="Index6.html" class="support">Support</a></li>
+                            <li><a href="quiz.html" class="quiz">Quiz</a></li>
+                            <li><a href="Sale.html" class="quiz">Shop </a></li>
+                            <li>
+                                <p id="openModal" class="button" class="header">Account</p>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="overlay" class="overlay"></div>
+        <div id="modal" class="modal">
+
+            <form action="" id="login_form active" class="accountForm">
+
+                <div class="form_row single_row">
+                    <input type="text" name="login" id="login" pattern="\D{3,20}" required placeholder="Your login">
+                </div>
+
+                <div class="form_row single_row">
+
+                    <input type="password" name="pass" id="pass" pattern="\d{5,20}" required
+                        placeholder="Your password:">
+                </div>
+                <!-- required - обязательно заполнить поля -->
+                <div class="chek_row">
+
+                    <input type="checkbox" name="remember" id="remember">
+                    <label for="remember">Remember me
+                    </label>
+                </div>
+
+                <div class="form_row">
+                    <button type="submit">Sign In</button>
+                </div>
+
+            </form>
+
+        </div>
+        <form>
+            <label>
+                Your name:
+                <input type="text" name="name" placeholder="Dmitriy Nefedov">
+            </label>
+
+            <label>
+                E-mail:
+                <input type="email" name="email" placeholder="example@email.com">
+            </label>
+            <label>
+                Your request:
+                <textarea name="comment" placeholder="What is the essence of the problem?"></textarea>
+            </label>
+            <button type="submit">
+                Отправить
+            </button>
+        </form>
+
+
+
+
+    </main>
+
+
+
+    <footer>
+
+        <div class="container">
+
+            <div class="d-flex">
+
+                <div class="social-links">
+
+                    <a href="https://www.darksouls.jp/" target="_blank">Dark Souls Official Site</a>
+
+                    <a href="">Telegram</a>
+
+                    <a href="">Все права защищены</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+    <script src="form.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+body.quiz {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-image: url(png/back_quiz.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.question-wrapper {
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: rgba(127, 144, 155, 0.871);
+}
+
+.question_name1,
+.question_name2,
+.question_name3,
+.question_name4,
+.question_name5 {
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    background-color: #c54a2be5;
+
+}
+
+.question_block {
+    padding: 20px;
+}
+
+.question_picture img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+
+.answer input[type=radio] {
+    margin-right: 10px;
+
+}
+
+
+.answer label {
+    cursor: pointer;
+}
+
+.answers_wrapper {
+    margin-top: 20px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 26px;
+}
+
+label {
+
+    border-radius: 30px;
+    padding: 5px;
+}
+
+label:hover {
+    background-color: rgba(211, 211, 211, 0.323);
+    transition: background-color 0.3s ease;
+
+}
+
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result,
+#result2,
+#result3,
+#result4,
+#result5,
+#scores {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+.questions.active {
+    display: block;
+}
+
+.questions2,
+.questions3,
+.questions4,
+.questions5 {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.nextBtn {
+    margin-left: 445px;
+}
+
+.page1,
+.page2,
+.page3,
+.page4 header,
+.page5 {
+    padding: 30px 15px;
+
+}
+
+
+.d-flex {
+    display: flex;
+    margin: auto;
+    max-width: 1800px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul.d-flex {
+    list-style: none;
+    gap: 30px;
+}
+
+
+.logo,
+a {
+
+    color: rgb(15, 12, 12);
+    text-decoration: none;
+    list-style: none;
+    font-size: 25px;
+    padding: 20px;
+    margin-left: 50px;
+
+}
+
+.logo {
+    border-radius: 20px;
+    background-color: rgb(139, 111, 111);
+    transition: all .2s ease-in-out;
+}
+
+.logo:hover {
+    background-color: rgb(139, 111, 111);
+    transform: scale(1.1);
+}
+
+.quiz,
+.shop,
+.support {
+    border-radius: 20px;
+    background-color: rgb(139, 111, 111);
+    transition: all .2s ease-in-out;
+}
+
+input[class="hide"] {
+    display: none;
+}
+
+input[type="radio"]:checked+label {
+    background-color: rgb(138, 78, 78);
+}
